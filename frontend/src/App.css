@@ -1,0 +1,48 @@
+:root {
+  --background-color: #656176;
+  --foreground-color: #f8f1ff;
+  --highlight-color: #decdf5;
+  --bold-color: #1b998b;
+}
+
+body {
+  font-family: proxima-nova, sans-serif;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  font-size: 13pt;
+}
+
+button {
+  border: 2px solid var(--highlight-color);
+  background-color: var(--bold-color);
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+  padding: 2px 15px;
+}
+
+button[disabled] {
+  cursor: default;
+  background-color: var(--background-color);
+  color: #f8f1ff88;
+  border: 2px solid #f8f1ff88;
+}
+
+button.stealthy {
+  border: none;
+  background: none;
+  padding: 0px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  font: inherit;
+  font-size: inherit;
+  border: 2px solid var(--highlight-color);
+  padding: 2px;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "perfectpractice",
+  "scripts": {
+    "start": "cd backend/ && npm run start-prod",
+    "startdev": "npx nodemon server/server.js",
+    "build": "cd frontend/ && npm install && npm run build && cd ../backend && npm install && npx tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "16.x",
+    "npm": "8.x"
+  }
+}
